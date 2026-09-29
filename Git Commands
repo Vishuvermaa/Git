@@ -51,6 +51,32 @@ git push --set-upstream origin branch_name --> The --set-upstream option links y
 git remote show origin --> The git remote show origin command provides detailed information about the remote repository named origin. This includes details about the remote branches, their tracking status, and other relevant information.
 
 git config --global user.name "Your Name"
-
 git config --global user.email "your.email@example.com"
+
+
+###########To push the git folder from local device to your github repositry#############
+
+First- pull the repositry from online to local machine in any folder(file explorer).
+command:
+1: git clone (past the code path)
+
+2: go to the folder where you pull the repositry data and delete the .git folder
+
+3: click on the path in local device path(file explorer) and type cmd
+
+4: git init (to initilise a git , to get connect local machine with github(online))
+
+5: Follow these commands to push the files on github repository: 
+a: git remote add origin https://github.com/Vishuvermaa/Intra-App-Deployment-New.git (http://--- this is my githib repository path where is want to push data from local device)
+
+b: git branch -M main 
+
+c: git push -u origin main
+
+If command 'c' did not work then check if there is any pending commits. 
+To check use "git status" if there is anthing pending then use this command "git add ." this will add every item then again check the status and run 'c' command.
+
+
+
+
 
