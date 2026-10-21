@@ -74,7 +74,8 @@ b: git branch -M main
 c: git push -u origin main
 
 If command 'c' did not work then check if there is any pending commits. 
-To check use "git status" if there is anthing pending then use this command "git add ." this will add every item then again check the status and run 'c' command.
+To check use "git status" if there is anthing pending then use this command "git add ." this will add every item then commit the changes with command "git commit -m "Initial commit"" 
+then again check the status and run 'c' command.
 
 
 
